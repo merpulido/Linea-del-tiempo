@@ -1,0 +1,219 @@
+* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f7;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #1e3d58;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3.2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Menú de navegación */
+nav {
+    margin-top: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav li {
+    text-align: center;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav li:hover {
+    transform: scale(1.05);
+}
+
+nav a {
+    display: block;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff5722;
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Efectos para las imágenes */
+.link-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    transform-origin: center center;
+}
+
+.link-image:hover {
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.1) contrast(1.2);
+}
+
+/* Agregar un contorno animado a las imágenes */
+.link-image:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 2px solid #ff5722;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.link-image:hover:before {
+    opacity: 1;
+}
+
+/* Contenido principal */
+.content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Contenedor PDF */
+.pdf-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+.pdf-container:hover {
+    transform: scale(1.05);
+}
+
+.pdf-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.pdf-icon:hover {
+    transform: rotate(360deg);
+}
+
+.pdf-container a {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+    border: 2px solid #007bff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.pdf-container a:hover {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #0056b3;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #1e3d58;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+footer a:hover {
+    background-color: #ff3d00;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+/* Estilos específicos para el enlace "Contáctanos" */
+footer {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+footer a.contact-link {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1e3d58;
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+}
+
+footer a.contact-link:hover {
+    color: #ff5722;
+    background-color: #fff;
+    border-color: #ff5722;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}

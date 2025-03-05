@@ -1,0 +1,95 @@
+/* reset básico para eliminar márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para el cuerpo de la página */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f8ff; /* Color pastel de fondo */
+    color: #333; /* Texto oscuro para buena legibilidad */
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Estilo del header */
+  header {
+    background-color: #150aaa; /* Color naranja brillante de los 70's */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  /* Estilo para las secciones */
+  section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    font-family: 'Arial', sans-serif;
+    color: #183586; /* Naranja brillante */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+  
+  section ul {
+    list-style: none;
+  }
+  
+  section ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  /* Estilo para los botones */
+  .btn {
+    display: inline-block;
+    background-color: #1d0892; /* Naranja */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #180536; /* Rojo anaranjado */
+    transform: scale(1.05);
+  }
+  
+  /* Estilo para el pie de página */
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1em;
+    color: #333;
+    border-top: 2px solid #6021f3; /* Línea de color naranja */
+    padding-top: 10px;
+  }
+  
+  footer p {
+    font-style: italic;
+    color: #666;
+  }
